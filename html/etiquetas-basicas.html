@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Etiquetas Básicas de HTML</title>
+    <link rel="shortcut icon" href="../images/logo5.png" type="image/x-icon">
+   
+</head>
+<body>
+    <div id="etiquetash1"><h1 class="h1" id="tituloetiquetas">Etiquetas HTML</h1></div>
+
+    <h1 class="Indice" id="indice">Índice
+    </h1>
+    <details>
+      <summary><strong> Abrir índice </strong></summary>
+    <div class="indice">
+      <ul class="ind">
+        <li><a href="#iniciofin">Inicio y fin de documento</a></li>
+        <li><a href="#infoencabezado">Información encabezado</a></li>
+        <li><a href="#deftitulo">Título</a></li>
+        <li><a href="#cuerpo">Cuerpo </a></li>
+        <li><a href="#encabezados">Encabezados de nivel </a></li>
+        <li><a href="#parrafos">Párrafos</a></li>
+        <li><a href="#saltos">Saltos de línea</a></li>
+        <li><a href="#enlaces">Enlaces</a></li>
+        <li><a href="#imagenes">Imágenes</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#tablas">Tablas</a></li>
+      </ul>
+    </div>
+  </details>
+
+    <div id="texto2"><div class="texto">
+        Las etiquetas HTML son bloques de código que dan formato, funcionalidad y estructura al contenido de las páginas web. Estos fragmentos sirven como indicadores o instrucciones para que un navegador muestre de forma adecuada la información contenida en tus documentos. Es importante mencionar que el HTML no se considera un lenguaje de programación, pues no crea funciones dinámicas. No obstante, con el apoyo de las etiquetas HTML, los desarrolladores pueden configurar diversas estructuras para sus sitios web; por ejemplo: secciones, tablas, párrafos, enlaces y atributos. <br>
+        Las etiquetas HTML se componen de tres partes básicas: el elemento, el atributo y el contenido. <br>
+
+        <ul>
+     <li>El <strong>elemento</strong> es el nombre de la etiqueta, generalmente pareada (es decir: con apertura y cierre).</li>
+     <li>El <strong>atributo</strong>  es lo que diferencia a un elemento y que le da ciertas características, como tamaño, color, tipo de fuente.</li>
+    <li>El <strong>contenido</strong> es el texto que se encuentra dentro de la etiqueta.</li>
+        </ul>
+        
+        <br><br>
+        <h2 class="tituloapartado">Etiquetas HTML básicas: </h2>
+        <h3 class="tituloapartado" id="iniciofin">Inicio y fin del documento</h3>
+        <div class="texto"><code>&lt;html&gt;</code>:  Define el inicio y el final del documento HTML.</div>
+        <h3 class="tituloapartado" id="infoencabezado">Información encabezado</h3>
+        <div class="texto"><code>&lt;head&gt;</code>: Define la información de encabezado del documento HTML.</div>
+        <h3 class="tituloapartado" id="deftitulo">Título</h3>
+        <div class="texto"><code>&lt;title&gt;</code>: Define el título del documento HTML.</div>
+        <h3 class="tituloapartado" id="cuerpo">Cuerpo</h3>
+        <div class="texto"><code>&lt;body&gt;</code>: Define el cuerpo del documento HTML.</div>
+        <h3 class="tituloapartado" id="encabezados">Encabezados de nivel</h3>
+        Los encabezados se usan para crear títulos y subtítulos. Hay seis niveles de encabezados, desde <code>&lt;h1&gt;</code> (el más grande) hasta <code>&lt;h6&gt;</code> (el más pequeño). <br><br>
+        Ejemplos:
+       <h1><code>&lt;h1&gt;</code>: para encabezados de nivel 1 <code>&lt;/h1&gt;</code></h1>
+       <h2><code>&lt;h2&gt;</code>: para encabezados de nivel 2 <code>&lt;/h2&gt;</code></h2>
+       <h3><code>&lt;h3&gt;</code>: para encabezados de nivel 3 <code>&lt;/h3&gt;</code></h3>
+       <h3 class="tituloapartado" id="parrafos">Párrafos</h3>
+       <div class="texto"><code>&lt;p&gt;</code>: Define un párrafo.</div>
+       <h3 class="tituloapartado" id="saltos">Saltos de línea</h3>
+       <div class="texto"><code>&lt;br&gt;</code>: Define un salto de línea.</div>
+       <h3 class="tituloapartado" id="enlaces">Enlaces</h3>
+       <div class="texto"><code>&lt;a&gt;</code>: Define un hipervínculo.</div>
+       <h3 class="tituloapartado" id="imagenes">Imágenes</h3>
+       <div class="texto"><code>&lt;img&gt;</code>: Define una imagen.</div>
+       <h3 class="tituloapartado" id="listas">Listas</h3>
+       <div class="texto"><code>&lt;ul&gt;</code>: Define una lista sin orden.</div>
+       <div class="texto"><code>&lt;ol&gt;</code>: Define una lista ordenada.</div>
+       <div class="texto"><code>&lt;li&gt;</code>: Define un elemento de la lista.</div>
+        <br> <br>
+        Ejemplo sin orden:
+        <ul>
+            <li><code>&lt;li&gt;</code>Elemento 1 de la lista<code>&lt;/li&gt;</code></li>
+            <li><code>&lt;li&gt;</code>Elemento 2 de la lista<code>&lt;/li&gt;</code></li>
+            <li><code>&lt;li&gt;</code>Elemento 3 de la lista<code>&lt;/li&gt;</code></li>
+        </ul>
+        Ejemplo ordenada:
+        <ol>
+            <li><code>&lt;li&gt;</code>Elemento 1 de la lista<code>&lt;/li&gt;</code></li>
+            <li><code>&lt;li&gt;</code>Elemento 2 de la lista<code>&lt;/li&gt;</code></li>
+            <li><code>&lt;li&gt;</code>Elemento 3 de la lista<code>&lt;/li&gt;</code></li>
+        </ol>
+        <h3 class="tituloapartado" id="tablas">Tablas</h3>
+       <div class="texto"><code>&lt;table&gt;</code>: Define una tabla.</div>
+       <div class="texto"><code>&lt;tr&gt;</code>: Define una fila de tabla.</div>
+       <div class="texto"><code>&lt;th&gt;</code>: Define una celda de encabezado de tabla.</div>
+       <div class="texto"><code>&lt;td&gt;</code>: Define una celda de tabla.
+       <br> <br>
+       Ejemplo tabla:
+       <table>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1, Columna 1</td>
+            <td>Fila 1, Columna 2</td>
+            <td>Fila 1, Columna 3</td>
+        </tr>
+        <tr>
+            <td>Fila 2, Columna 1</td>
+            <td>Fila 2, Columna 2</td>
+            <td>Fila 2, Columna 3</td>
+        </tr>
+       </table>
+       <br>
+    </div>
+  </div></div>
+  <footer>Para volver al indice <a href="#indice"><img src="../images/indice.png" alt="indice" height="30"></a></footer>
+</body>
+</html>

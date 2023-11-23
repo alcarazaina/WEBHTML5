@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Enlaces</title>
+    <link rel="shortcut icon" href="../images/logo5.png" type="image/x-icon">
+</head>
+<body>
+    <div id="etiquetash1"><h1 class="h1" id="tituloetiquetas">Enlaces</h1></div>
+
+    <h1 class="Indice" id="indice">Índice
+    </h1>
+    <details>
+      <summary><strong> Abrir índice </strong></summary>
+    <div class="indice">
+      <ul class="ind">
+        <li><a href="#mismapagina">Enlace a la misma página</a></li>
+        <li><a href="#otrapagina">Enlace a otra página</a></li>
+      </ul>
+    </div>
+  </details>
+  <div id="texto2"><div class="texto">
+    Los enlaces en HTML son elementos que permiten a los usuarios navegar de una página web a otra. Los enlaces se crean mediante la etiqueta <code>&lt;a&gt;</code> y se definen mediante el atributo <code>href</code>. El atributo <code>href</code> especifica la URL de destino del enlace. El texto del enlace se define entre las etiquetas de apertura y cierre de la etiqueta <code>&lt;a&gt;</code>. 
+     <br>
+
+
+  <h2 class="tituloapartado">Enlaces en HTML: </h2>
+  <h3 class="tituloapartado" id="mismapagina">Enlaces a la misma página</h3>
+  <div class="texto">Para crear un enlace dentro de la misma página usando HTML, debes seguir los siguientes pasos: <br><br>
+<article> <h4>
+Crea un elemento ancla usando la etiqueta <code>&lt;a&gt;&lt;/a&gt;</code>:. Este elemento define un lugar en la página al cual puedes crear un enlace. Todo lo que esté dentro de las etiquetas <code>&lt;a&gt; </code>y <code>&lt;/a&gt;</code>, normalmente es texto o una imagen, será el destino del enlace. <br> <br>
+Coloca algo dentro del elemento ancla. Si bien HTML admite que el elemento ancla se deje vacío, algunos navegadores podrían no encontrarla si no hay nada entre las etiquetas <code>&lt;a&gt; </code>y <code>&lt;/a&gt;</code>. Simplemente escribe el texto al cual quieras crear un enlace: <code>&lt;a&gt; Mi sección de preguntas frecuentes&lt;/a&gt;</code>. La etiqueta <code>&lt;a&gt;</code> por lo general no cambia el estilo del texto.
+<br><br>
+Agrégale un atributo id al elemento ancla. El atributo id le proporciona al ancla un identificador único al cual vincularse. Colócalo dentro de la etiqueta <code>&lt;a&gt;</code> como se muestra a continuación: <code>&lt;a id="nombre-del-ancla-1"&gt;Mi sección de preguntas frecuentes&lt;/a&gt;</code>. <br><br>
+Elige un valor para tu id. El valor debe ser único para ese id. Si hay otro id en el documento con el mismo valor, el navegador no podrá saber a qué ancla quieres ir. El valor debe comenzar con una letra. Puedes usar letras, dígitos, guiones medios, guiones bajos, dos puntos y puntos. <br> <br>
+Inserta el id en otro elemento, si quieres. No es necesario que uses la etiqueta <code>&lt;a&gt;</code> cada vez que quieras crear un ancla. El atributo id en realidad puede ir en cualquier elemento HTML. <br><br>
+Una vez que hayas creado el ancla, puedes crear un enlace directo a ella desde cualquier lugar de la página. Para hacerlo, debes usar el formato <code>&lt;a href="#nombre-del-ancla-1"&gt;Enlace a mi sección de preguntas frecuentes&lt;/a&gt;</code>. En este caso, el valor del atributo href es el símbolo # seguido del valor del id del ancla.
+<br> <br>
+    Ejemplo: <a href="#indice">Enlace de vuelta al índice</a>
+  </h4>
+</article>
+  </div>
+  <h3 class="tituloapartado" id="otrapagina">Enlaces a otra página</h3>
+  <div class="texto">Para crear un enlace a otra página usando HTML, debes seguir los siguientes pasos: <br> <br>
+   <article> <h4>
+    Crea un elemento ancla usando la etiqueta  <code>&lt;a&gt;&lt;/a&gt;</code>. Este elemento define un lugar en la página al cual puedes crear un enlace. Todo lo que esté dentro de las etiquetas <code>&lt;a&gt; </code>y <code>&lt;/a&gt;</code>, normalmente es texto o una imagen, será el destino del enlace. <br><br>
+    Coloca algo dentro del elemento ancla. Si bien HTML admite que el elemento ancla se deje vacío, algunos navegadores podrían no encontrarla si no hay nada entre las etiquetas <code>&lt;a&gt; </code>y <code>&lt;/a&gt;</code> Simplemente escribe el texto al cual quieras crear un enlace: <code>&lt;a href="https://www.ejemplo.com"&gt;Mi sitio web &lt;/a&gt;</code>. La etiqueta <code>&lt;a&gt;</code> por lo general no cambia el estilo del texto. <br><br>
+    Agrega el atributo href al elemento ancla. El atributo href le proporciona al ancla la URL a la cual vincularse. Colócalo dentro de la etiqueta <code>&lt;a&gt;</code> como se muestra a continuación: <code>&lt;a href="https://www.ejemplo.com"&gt;Mi sitio web&lt;/a&gt;</code>. <br><br>
+    Elige un valor para tu <code>href</code>. El valor debe ser la URL de la página a la que deseas vincular. Asegúrate de incluir el protocolo (por ejemplo, http:// o https://) al principio de la URL. <br> <br>
+    Inserta el <code>href</code> en otro elemento, si quieres. No es necesario que uses la etiqueta <code>&lt;a&gt;</code> cada vez que quieras crear un enlace. El atributo <code>href</code> en realidad puede ir en cualquier elemento HTML. <br> <br>
+    Una vez que hayas creado el enlace, puedes hacer clic en él para ir a la página vinculada. Si deseas que el enlace se abra en una nueva pestaña, agrega el atributo <code>target="_blank"</code> a la etiqueta <code>&lt;a&gt;</code>. 
+
+  <br><br>
+ 
+    Ejemplo misma pestaña: <a href="https://www.instagram.com/reinanady/">Este enlace te envia a una página en la misma pestaña.</a> <br>
+    Ejemplo otra pestaña: <a href="https://www.instagram.com/reinanady/" target="_blank">Este enlace te envia a una página en otra pestaña.</a> <br>
+    Ejemplo con una imagen: Pulsa la imagen para abrir el enlace en una nueva pestaña <a href="https://www.instagram.com/reinanady/" target="_blank"><img src="../images/Reina.jpeg" alt="reina" height="30"></a>
+  </h4>
+</article>
+  </div>
+</div></div>
+<footer>Para volver al indice <a href="#indice"><img src="../images/indice.png" alt="indice" height="30"></a></footer>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Etiquetas Semánticas</title>
+    <link rel="shortcut icon" href="../images/logo5.png" type="image/x-icon">
+</head>
+<body>
+    <div id="etiquetash1"><h1 class="h1" id="tituloetiquetas">Etiquetas semánticas</h1></div>
+
+    <h1 class="Indice" id="indice">Índice
+    </h1>
+    <details>
+      <summary><strong> Abrir índice </strong></summary>
+    <div class="indice">
+      <ul class="ind">
+        <li><a href="#header-y-nav">Header</a></li>
+        <li><a href="#main-section">Main y section</a></li>
+        <li><a href="#article">Article</a></li>
+        <li><a href="#aside">Aside</a></li>
+        <li><a href="#footers">Footers</a></li>
+      </ul>
+    </div>
+  </details>
+  <div id="texto2">
+    Las etiquetas semánticas consisten en asignar significado y contexto a elementos dentro de un conjunto de datos, como texto o imágenes. Su objetivo es categorizar y describir el contenido para facilitar la comprensión y el procesamiento eficiente por parte de las máquinas. En el procesamiento de lenguaje natural, estas etiquetas se aplican a palabras, frases o documentos para indicar su significado y relación con otros elementos, siendo esenciales en tareas como la clasificación de texto y la extracción de información. Este enfoque permite a los algoritmos interpretar y contextualizar la información de manera más precisa. <br><br>
+  <hr>
+  
+  <h3 class="tituloapartado" id="header-y-nav">Header y Nav</h3>
+
+  <div class="texto">
+    La etiqueta <code>&lt;header&gt;</code> en HTML se utiliza para definir la cabecera de una sección o de todo el documento. Este elemento suele contener información introductoria o de navegación, como logotipos, enlaces de menú y otros elementos relacionados con la parte superior de la página web.
+    La etiqueta <code>&lt;nav&gt;</code> en HTML5 se utiliza para definir una sección de navegación en un documento web. Su propósito es indicar que el contenido dentro de esta etiqueta representa enlaces de navegación, como menús de navegación, barras de navegación o cualquier otra lista de enlaces que dirijan a otras páginas o secciones del mismo sitio web. 
+    <br><br>
+ 
+    <article>
+        <h4>
+            La etiqueta <code>&lt;header&gt;</code> en HTML se utiliza para definir la cabecera de una sección o de todo el documento mientras que la etiqueta <code>&lt;nav&gt;</code> sirve como barra de navegación, en este ejemplo incluye una lista con enlaces. <br><br>Aquí te doy un ejemplo básico de cómo se puede utilizar:  
+         
+
+        <code><br>&lt;body&gt;<br>
+
+            &lt;header&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Encabezado de la Página&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#acerca"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
+                &lt;/header&gt;<br><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;!-- Aquí continuaría el resto de tu contenido HTML --&gt;</code><br><br><br>
+            &lt;/body&gt;<br><br>
+            &lt;/html&gt;
+          </code>
+        </h4>
+    </article><br><br>
+
+    <h3 class="tituloapartado" id="main-section">Main y Section</h3>
+    <div class="texto">
+      La etiqueta <code>&lt;main&gt;</code> en HTML5 se utiliza para definir el contenido principal de un documento HTML. Debe contener el contenido central y único de la página, excluyendo encabezados, pies de página, barras laterales y cualquier contenido que no sea esencial para comprender el propósito principal del documento. <br><br>
+    </div>
+    <article>
+      <h4>
+        la etiqueta <code>&lt;main&gt;</code> contendrá el contenido principal de la web así como las etiquetas <code>&lt;section&gt;</code> que organizan aún más el contenido, para ello contemplemos la continuación del código anterior: <br><br>
+        <code>
+          &lt;main&gt;<br><br>
+          &nbsp;&nbsp;&nbsp;&lt;section&gt;<br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Acerca de nosotros&lt;/h2&gt;<br><br>
+          &nbsp;&nbsp;&nbsp;&lt;p&gt;Información sobre quiénes somos y qué hacemos.&lt;/p&gt;<br><br><br>
+          &nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>
+          &lt;/main&gt;<br><br>
+          &lt;body&gt;<br><br>
+          &lt;/html&gt;
+        </code>
+      </h4>
+    </article>
+    <h3 class="tituloapartado" id="article">Article</h3>
+    <div class="texto">
+      La etiqueta <code>&lt;article&gt;</code> es un elemento HTML utilizado para representar un contenido independiente y autosuficiente en una página web. Este elemento se utiliza para encapsular información que podría existir y ser distribuida de manera independiente, como un artículo de noticias, un blog, un informe o cualquier tipo de contenido que tenga sentido por sí mismo. <br><br>
+    </div>
+    <article>
+      <h4>
+        En este ejemplo los artículos están envueltos en la etiqueta <code>&lt;article&gt;</code>. Cada artículo tiene un título <code>&lt;h2&gt;</code>, la fecha de publicación y un párrafo de contenido <code>&lt;p&gt;</code>. Esto ayuda a estructurar la página web y a proporcionar información semántica sobre la naturaleza independiente de cada artículo: <br><br>
+
+        <code>&lt;article&gt;<br><br>
+
+          &nbsp; &nbsp; &nbsp;&lt;h2&gt;Titulo del Artículo 1 &lt;/h2&gt;<br><br>
+          &nbsp; &nbsp; &nbsp;&lt;p&gt;Fecha de publicación: 23 de noviembre de 2023&lt;/p&gt;<br><br>
+          &nbsp; &nbsp; &nbsp;&lt;p&gt;Este es el contenido del primer artículo. Puede contener texto, imágenes, enlaces, etc.&lt;/p&gt;<br><br>
+        &lt;/article&gt;<br><br><br>
+      
+        &lt;article&gt;<br><br>
+          &lt;h2&gt;Titulo del Artículo 2&lt;/h2&gt;
+          &lt;p&gt;Fecha de publicación: 24 de noviembre de 2023&lt;/p&gt;<br><br>
+          &lt;p&gt;Este es el contenido del segundo artículo. Puede contener texto, imágenes, enlaces, etc.&lt;/p&gt;<br><br>
+        &lt;/article&gt;<br><br>
+        &lt;body&gt;<br><br>
+        &lt;/html&gt;
+      </code>
+        
+      </h4>
+    </article>
+  </div> 
+    <h3 class="tituloapartado" id="aside">Aside</h3>
+    <div class="texto">
+      <code>&lt;aside&gt;</code> se utiliza para encapsular información que es secundaria o adicional al contenido principal de la página, como barras laterales, notas, anuncios, enlaces relacionados, etc. Este contenido adicional no debe ser crucial para la comprensión del contenido principal de la página. <br><br>
+    </div>
+    <article>
+      <h4>
+        En este ejemplo, el contenido dentro de la etiqueta <code>&lt;aside&gt;</code> proporciona información adicional relacionada con el artículo principal, como enlaces a otros artículos relacionados. El navegador puede representar visualmente el contenido de <code>&lt;aside&gt;</code> de manera separada o en una ubicación diferente en la página, dependiendo del diseño y estilo específicos implementados mediante CSS.
+        <code><br><br><br><br>
+          &lt;article&gt;<br><br>
+          &nbsp;&nbsp;&nbsp;&lt;h2&gt;Título del artículo&lt;/h2&gt;<br><br>
+          &nbsp;&nbsp;&nbsp;&lt;p&gt;Contenido principal del artículo...&lt;/p&gt;<br><br>
+            
+            &lt;aside&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&lt;h3&gt;Artículos relacionados&lt;/h3&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Artículo 1&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;a href="#"&gt;Artículo 2&lt;/a&gt;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Artículo 3&lt;/a&gt;&lt;:/li&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br><br>
+            &lt;/aside&gt;<br><br><br>
+          &lt;/article&gt;<br><br><br><br>
+          &lt;body&gt;<br><br>
+          &lt;/html&gt;
+        </code>
+      </h4>
+    </article>
+    <div>
+      <h3 class="tituloapartado" id="footers">Footers</h3>
+      <div class="texto">
+        La etiqueta <code>&lt;footer&gt;</code> en HTML se utiliza para definir la sección de pie de página de un documento o de una sección específica. El contenido dentro de la etiqueta <code>&lt;footer&gt;</code> generalmente incluye información como derechos de autor, enlaces a páginas relacionadas, información de contacto, y otros elementos que son relevantes para la parte inferior de la página. El <code>&lt;footer&gt;</code> proporciona una manera estructurada de marcar el final de una sección o documento, ofreciendo información complementaria que no es esencial para la comprensión del contenido principal, pero que puede ser útil para el usuario. <br><br>
+      </div>
+      <article>
+        <h4>
+        
+        En este ejemplo, la etiqueta &lt;footer&gt; se utiliza para definir la sección de pie de página. Dentro de &lt;footer&gt;, hay un párrafo que incluye el símbolo de copyright &lt;&copy;&gt;, el año actual, el nombre de la empresa y un enlace de correo electrónico de contacto. Este contenido del pie de página proporciona información adicional que es relevante para la parte inferior de la página. <br><br>
+        <code>
+          &lt;footer&gt;<br><br>
+            &lt;p&gt; &copy;2023 Mi Empresa | &lt;a href="mailto:info@miempresa.com"&gt;info@miempresa.com&lt;/a&gt;&lt;/p&gt;<br><br>
+          &lt;/footer&gt;<br><br>
+          &lt;body&gt; <br><br>
+          &lt;/html&gt;
+
+        </code>
+      </h4>
+      </article>
+    </div><br><br>
+    <article>
+      <h4>
+        El resultado final de nuestra página sería algo parecido a esto: </h4><br><br>
+        <br><br>
+
+        <header id="header" class="header">
+          Encabezado de la Página (Header y nav)
+          <nav class="nav">
+              <ul>
+                  <li><a href="#article1">articulo1</a></li>
+                  <li><a href="#article2">articulo2</a></li>
+                  <li><a href="#article3">articulo3</a></li>
+              </ul>
+          </nav>
+      </header>
+  </article>
+     
+  
+          
+              
+              <main class="main1">
+                <h2>Acerca de (main)</h2>
+              <p>Contenido Principal: La etiqueta <code>&lt;main&gt;</code> envuelve el contenido central de la página, excluyendo encabezados, pies de página, barras laterales u otras secciones no esenciales.
+
+                Única por Documento: Un documento HTML debería tener una única etiqueta <code>&lt;main&gt;</code>. Esta etiqueta ayuda a los usuarios y a las máquinas a identificar rápidamente el contenido central de la página.
+                
+                Accesibilidad: La etiqueta <code>&lt;main&gt;</code> es útil para mejorar la accesibilidad web, ya que los lectores de pantalla y otras tecnologías pueden utilizarla para identificar y navegar rápidamente al contenido principal.
+                
+                Compatibilidad: La etiqueta <code>&lt;main&gt;</code> es parte de HTML5 y es compatible con la mayoría de los navegadores modernos. <br> </p>
+             
+              </main>
+          <article id="article1" class="article1">
+              <h2>Titulo del Artículo 1 (primer artículo)</h2>
+              <p>Fecha de publicación: 23 de noviembre de 2023</p>
+              <p>Este es el contenido del primer artículo. Puede contener texto, imágenes, enlaces, etc.</p>
+          </article>
+  
+          <article id="article2" class="article2">
+              <h2>Titulo del Artículo 2 (segundo artículo)</h2>
+              <p>Fecha de publicación: 24 de noviembre de 2023</p>
+              <p>Este es el contenido del segundo artículo. Puede contener texto, imágenes, enlaces, etc.</p>
+          </article>
+  
+          <article id="article3" class="article3">
+              <h2>Título del artículo</h2>
+              <p>Contenido principal del artículo...</p>
+              <aside>
+                  <h3>Artículos relacionados</h3>
+                  <ul>
+                      <li><a href="#article1">Ir a artículo 1</a></li>
+                      <li><a href="#article2">Ir a artículo 2</a></li>
+                      <li><a href="#header">Volver a header</a></li>
+                  </ul>
+              </aside>
+          </article>
+  
+      
+    
+      <footer>
+          <p>&copy; 2023 Tarea de Ainara y Carlos| <a href="mailto:info@miempresa.com">info@marcasdam.com</a></p>
+      </footer>
+      
+    <br><br><br>
+
+    <footer>
+      Para volver al índice <a href="#indice"><img src="../images/indice.png" alt="indice" height="30"></a>   
+  </footer>
+      
+</div>
+
+</body>
+</html>

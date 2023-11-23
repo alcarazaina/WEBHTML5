@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Formato de texto HTML</title>
+    <link rel="shortcut icon" href="../images/logo5.png" type="image/x-icon">
+</head>
+<body>
+    <div id="etiquetash1"><h1 class="h1" id="tituloetiquetas">Formato de texto</h1></div>
+
+    <h1 class="Indice" id="indice">Índice
+    </h1>
+    <details>
+      <summary><strong> Abrir índice </strong></summary>
+    <div class="indice">
+      <ul class="ind">
+        <li><a href="#negrita">Negrita</a></li>
+        <li><a href="#italica">Itálica o cursiva</a></li>
+        <li><a href="#subrayado">Subrayado y tachado</a></li>
+        <li><a href="#supsub">Superíndice y subíndice</a></li>
+        <li><a href="#quote">Comillas</a></li>
+        <li><a href="#fuentesespeciales">Otras fuentes especiales</a></li>
+        <li><a href="#color">Color de fuente</a></li>
+      </ul>
+    </div>
+  </details>
+  <div id="texto2"><div class="texto">
+    En HTML, el formato del texto se puede controlar mediante el uso de etiquetas. Algunas de los formatos más comunes son:  <strong>negrita, cursiva, subrayado, tachado, y color de fuente.</strong>
+     <br>
+
+
+  <h2 class="tituloapartado">Formatos de texto HTML: </h2>
+  <h3 class="tituloapartado" id="negrita">Texto en negrita</h3>
+  <div class="texto"><code>&lt;strong&gt;</code>: Se utiliza para hacer que el texto aparezca en negrita. <br> <br>
+    Ejemplo: Esta <strong>palabra</strong> aparecerá en negrita.
+  </div>
+  <h3 class="tituloapartado" id="italica">Itálica o cursiva</h3>
+  <div class="texto"><code>&lt;em&gt;</code>: Se utiliza para hacer que el texto aparezca en cursiva. <br><br>
+    Ejemplo: Esta <em>palabra</em> aparecerá en cursiva.
+  </div>
+  <h3 class="tituloapartado" id="subrayado">Subrayado y tachado</h3>
+  <div class="texto"><code>&lt;u&gt;</code>: Se utiliza para hacer que el texto aparezca subrayado. <br>
+   <code>&lt;del&gt;</code>: Se utiliza para hacer que el texto aparezca tachado. <br> <br>
+    Ejemplo: Esta <u>palabra</u> aparecerá subrayada. <br>
+    Ejemplo: Esta <del>palabra</del> aparecerá tachada.
+</div>
+<h3 class="tituloapartado" id="supsub">Superíndice y subíndice</h3>
+  <div class="texto"><code>&lt;sup&gt;</code>: Se utiliza para hacer que el texto aparezca como un superíndice. <br>
+    <code>&lt;sub&gt;</code>: Se utiliza para hacer que el texto aparezca como un subíndice. <br> <br>
+    Ejemplo: Esta <sup>palabra</sup> aparecerá como un superíndice. <br>
+    Ejemplo: Esta <sub>palabra</sub> aparecerá como un subíndice.
+  </div>
+  <h3 class="tituloapartado" id="quote">Texto entre comillas</h3>
+  <div class="texto"><code>&lt;q&gt;</code>: Se utiliza para hacer que el texto aparezca entre comillas. <br> <br>
+    Ejemplo: Esta <q>palabra</q> aparecerá entre comillas.
+  </div>
+  <h3 class="tituloapartado" id="fuentesespeciales">Otras fuentes especiales</h3>
+  <div class="texto">
+  <table>
+   <tr>
+       <th>Etiqueta</th>
+       <th>¿Qué hace?</th>
+       <th>Ejemplo</th>
+   </tr>
+   <tr>
+       <td><code>&lt;cite&gt;</code></td>
+       <td>Texto citado</td>
+       <td><cite>Esto es una cita</cite></td>
+   </tr>
+   <tr>
+       <td><code>&lt;code&gt;</code></td>
+       <td>Para introducir código</td>
+       <td><code> for (int i = 1; i &lt;= 10; i++) {
+        System.out.print(i + " ");
+    }</code></td>
+   </tr>
+   <tr>
+    <td><code>&lt;address&gt;</code></td>
+    <td>Para introducir una dirección</td>
+    <td><address>C/Irún, 24 <br> Madrid <br> 28004</address></td>
+   </tr>
+   <tr>
+    <td><code>&lt;abbr&gt;</code></td>
+    <td>Para abreviaturas</td>
+    <td><abbr title="Los Angeles">L.A.</abbr></td>
+   </tr>
+   <tr>
+    <td><code>&lt;kbd&gt;</code></td>
+    <td>Para un atajo de teclado</td>
+    <td><kbd>ctrl+z</kbd></td>
+   </tr>
+   <tr>
+    <td><code>&lt;samp&gt;</code></td>
+    <td>Salida de la ejecución de un programa</td>
+    <td><samp>El valor de variable es: 3</samp></td>
+   </tr>
+   <tr>
+    <td><code>&lt;var&gt;</code></td>
+    <td>Para definir variables</td>
+    <td><var>int variable = 3;</var></td>
+   </tr>
+   <tr>
+    <td><code>&lt;pre&gt;</code></td>
+    <td>Respeta el formato en el que escribimos</td>
+    <td><pre>   Aquí hay   espacios  </pre></td>
+   </tr>
+  </table>
+  <br>
+</div>
+<h3 class="tituloapartado" id="color">Color de la fuente</h3>
+<div class="texto"> <code>&lt;span style= "color: rgb();"&gt;</code>: Para cambiar el color de la fuente<br><br>
+  Ejemplo: Esta <span style="color: rgb(3, 36, 65);">palabra </span>aparecerá en otro color.
+</div>
+</div></div>
+<footer>Para volver al indice <a href="#indice"><img src="../images/indice.png" alt="indice" height="30"></a></footer>
+</body>
+</html>

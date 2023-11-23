@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Bloques HTML</title>
+    <link rel="shortcut icon" href="../images/logo5.png" type="image/x-icon">
+</head>
+<body>
+    <div id="etiquetash1"><h1 class="h1" id="tituloetiquetas">Bloques</h1></div>
+
+    <h1 class="Indice" id="indice">Índice
+    </h1>
+    <details>
+      <summary><strong> Abrir índice </strong></summary>
+    <div class="indice">
+      <ul class="ind">
+        <li><a href="#div">EL elemento &lt;div&gt;</a></li>
+        <li><a href="#p">El elemento &lt;p&gt;</a></li>
+      </ul>
+    </div>
+  </details> 
+  <div id="texto2"><div class="texto">
+    Los bloques en HTML son etiquetas que permiten definir bloques de contenido coherente, formado por texto e imágenes. Visualmente, cada bloque se muestra separado del resto de bloques. El bloque de contenido más simple es el párrafo <code>&lt;p&gt;</code> y la etiqueta de división <code>&lt;div&gt;</code>.
+     <br>
+     <h2 class="tituloapartado">Bloques en HTML: </h2>
+     <h3 class="tituloapartado" id="div">El elemento <code>&lt;div&gt;</code></h3>
+     El elemento <code>&lt;div&gt;</code> en HTML5, abreviatura de "division", es un contenedor de bloque sin significado específico por sí mismo. Su función principal es agrupar y estructurar otros elementos HTML, permitiendo la creación de secciones o bloques en una página web. El <code>&lt;div&gt;</code> se utiliza comúnmente junto con atributos y estilos CSS para aplicar diseños y organizar el contenido de manera más legible y mantenible. Al ser un contenedor genérico, el elemento <code>&lt;div&gt;</code> no afecta la presentación visual por sí mismo, pero su versatilidad lo convierte en una herramienta fundamental para la creación de diseños flexibles y la gestión de la estructura de una página web. <br><br><br>
+     <article>
+      <h4>
+      Aquí hay una breve descripción de cómo se utiliza el bloque  <code>&lt;div&gt;</code>: <br><br>
+      </h4>
+        <ul>
+          <li><h4><u>Agrupación de contenidos:</u><br><br>Se utiliza para envolver y agrupar otros elementos HTML, ya sea texto, imágenes, formularios u otros elementos, con el propósito de organizar el contenido de manera más clara y semántica. Veamos un ejemplo de uso:</h4></li>
+        </ul>
+           
+            <code>
+            &lt;div&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;&nbsp;Este es un párrafo dentro de un div.&nbsp;&lt;p&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&nbsp;Esto es un elemento de una lista dentro de un div&nbsp;&lt;/li&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;&nbsp;li&gt;&nbsp;Esto es otro elemento de la lista dentro de un div&nbsp;&lt;/li&gt;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br><br>
+            &lt;/div&gt;
+            </code>
+
+            <ul>
+              <li><h4><u>Aplicación de Estilos:</u><br><br>
+                Permite la aplicación de estilos a través de CSS. Al asignar identificadores <code>(id=)</code> o clases <code>(class=)</code> al <code>&lt;div&gt;</code> se pueden aplicar estilos específicos para controlar el diseño, el tamaño, los márgenes y otros aspectos visuales. Vamos con un ejemplo:</h4></li>
+            </ul>
+            <code>
+              &lt;div class="contenedor-estilizado"&gt; <br><br>
+              &nbsp;&nbsp;&nbsp;&lt;p id="miParrafo"&gt;Este es un párrafo de ejemplo con un identificador (ID).&lt;/p&gt;<br><br>
+              &nbsp;&nbsp;&nbsp; &lt;img src="imagen.jpg" alt="Una imagen"&gt; <br><br>
+              &lt;/div&gt;
+            </code>
+            <ul>
+              <li class="sinmarcador"><h4>Al aplicar un identificador class: <code> &lt;div class="contenedor-estilizado"&gt;</code> o un idenficador id: <code>&lt;p id="miParrafo"&gt;</code> tan solo tendríamos que ir a nuestra hoja de estilos CSS y añadir el estilo que deseemos ¡Pero recuerda! para identificar en CSS el div en cuestión, lo haremos con la siguiente estructura:</h4></li>
+            </ul>
+              <code>
+                .contenedor-estilizado &lbrace; <br>
+                  border: 1px solid black; <br>
+                  padding: 4%;<br>
+                  &rbrace;<br><br>
+
+                  #miParrafo &lbrace; <br>
+                  color=rgb(238, 250, 250); <br>
+                  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;<br>
+                  &rbrace;<br><br>
+              </code>
+     </article>
+
+     
+     <h3 class="tituloapartado" id="p">El elemento <code>&lt;p&gt;</code></h3>
+     En HTML se utiliza la etiqueta <code>&lt;p&gt;</code>para definir un párrafo de texto. Un párrafo en HTML es una sección de texto que se muestra como un bloque separado y generalmente se separa de otros párrafos mediante espacios en blanco vertical. Aquí hay una breve descripción de la etiqueta <code>&lt;p&gt;</code>: <br><br><br>
+
+     <article>
+      <h4>Veamos las características una a una del elemento <code>&lt;p&gt;</code>:</h4>
+      <ul>
+        <li><h4>Significado semántico: <br><br>La etiqueta <code>&lt;p&gt;</code> proporciona una estructura semántica al contenido, indicando que el texto dentro de ella forma un párrafo independiente. Esto ayuda a los navegadores y otros agentes de usuario a interpretar y presentar el contenido de manera adecuada. <br><br></h4></li>
+        <li><h4>Estilo predeterminado: <br><br>Los navegadores web aplican estilos predeterminados a los párrafos, generalmente incluyendo un espacio vertical antes y después del párrafo para mejorar la legibilidad. <br><br></h4></li>
+        <li><h4>Atributos adicionales <br><br> Aunque el uso básico no requiere atributos, puedes agregar atributos como id o class para seleccionar o estilizar el párrafo, y otros atributos según sea necesario.</h4></li>
+      </ul>
+      <h4>El uso del elemento <code>&lt;p&gt;</code> es muy sencillo, veamos como utilizarlo aplicando un identificador y una clase:</h4> <br>
+      <code>&lt;p id="miParrafo" class="destacado"&gt;Este párrafo tiene un identificador y una clase.&lt;/p&gt;</code>
+     </article>
+    </div></div> 
+  <footer>Para volver al indice <a href="#indice"><img src="../images/indice.png" alt="indice" height="30"></a></footer>
+</body>
+</html>

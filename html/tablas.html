@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Tablas HTML</title>
+    <link rel="shortcut icon" href="../images/logo5.png" type="image/x-icon">
+</head>
+<body>
+        <div id="etiquetash1"><h1 class="h1" id="tituloetiquetas">Tablas</h1></div>
+    
+        <h1 class="Indice" id="indice">Índice
+        </h1>
+        <details>
+          <summary><strong> Abrir índice </strong></summary>
+        <div class="indice">
+          <ul class="ind">
+            <li><a href="#tablas">Como crear una tabla</a></li>
+            <li><a href="#colspanrowspan">Colspan y Rowspan</a></li>
+          </ul>
+        </div>
+      </details>
+    
+      <div id="texto2" class="texto">
+        En HTML5, las tablas son elementos utilizados para organizar y mostrar datos de manera estructurada en filas y columnas. La etiqueta principal para crear tablas es <span style="color: rgb(3, 36, 65);"><code>&lt;table&gt;</code></span> <br><br>
+        Los elementos clave para construir una tabla incluyen:
+        <span style="color: rgb(3, 36, 65);"><code>&lt;tr&gt;</code></span> (table row): Define una fila de la tabla.
+        <span style="color: rgb(3, 36, 65);"><code>&lt;th&gt;</code></span> (table header): Define una celda de encabezado. Usualmente se utiliza en la primera fila o columna.
+        <span style="color: rgb(3, 36, 65);"><code>&lt;td&gt;</code></span> (table data): Define una celda de datos en la tabla. <br><br>
+    
+      <h3 class="tituloapartado" id="tablas">Creación de tablas</h3>
+    
+    <article>
+        <h4>
+        A continuación veremos un ejemplo de la estrucutra de una tabla usando estos elementos.<br><br>
+        <code>&lt;table&gt;<br><br>
+        &lt;caption&gt;Lista de Alumnos&lt;&#47;caption&gt;&nbsp;&rarr; <em>(nombre de la tabla)</em><br><br>
+        &nbsp;&nbsp;&lt;tr&gt;&rarr; <em>(primera fila de la tabla)</em><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;ID&lt;&#47;th&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Nombre&lt;&#47;th&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Edad&lt;&#47;th&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;FP&lt;&#47;th&gt;<br><br><br>
+        &nbsp;&lt;&#47;tr&gt;<br><br>
+        
+        &nbsp;&nbsp;&lt;tr&gt;&nbsp;&rarr; <em>(segunda fila de la tabla)</em><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1º&lt;&#47;td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Pedro&lt;&#47;td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;21&lt;&#47;td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;DAW&lt;&#47;td&gt;<br><br><br>
+        &nbsp;&lt;&#47;tr&gt;<br><br>
+    
+        &nbsp;&nbsp;&lt;tr&gt;&nbsp;&rarr; <em>(tercera fila de la tabla)</em><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1º&lt;&#47;td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Ainara&lt;&#47;td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;29&lt;&#47;td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;DAM&lt;&#47;td&gt;<br><br><br>
+        &nbsp;&lt;&#47;tr&gt;<br><br>
+    
+        &nbsp;&nbsp;&lt;tr&gt;&nbsp;&rarr; <em>(cuarta fila de la tabla)</em><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1º&lt;&#47;td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Carlos&lt;&#47;td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;36&lt;&#47;td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;DAM&lt;&#47;td&gt;<br><br><br>
+    
+        &nbsp;&lt;&#47;tr&gt;<br><br>
+        &lt;&#47;table&gt;</code><br><br>
+    
+        El resultado de esta tabla sería el siguiente; <br><br>
+    </h4>
+    <table class="tabla">
+        <caption class="caption">Lista de Alumnos</caption>
+        
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Grado</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Juan Pérez</td>
+                <td>18</td>
+                <td>12º</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Maria García</td>
+                <td>17</td>
+                <td>11º</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Carlos Rodríguez</td>
+                <td>19</td>
+                <td>12º</td>
+            </tr>
+    </table>
+        
+    </article>
+    <h3 class="tituloapartado" id="colspanrowspan">Colspan y Rowspan</h3>
+    <div class="texto">
+      En HTML, las atributos colspan y rowspan se utilizan en las etiquetas <span style="color: rgb(3, 36, 65);"><code>&lt;td&gt;</code></span> (celda de datos) de una tabla para especificar la cantidad de columnas o filas que una celda debe abarcar, respectivamente. <br><br>
+      <article>
+        <h4>
+          Veamos en profundidad como usar colspan y rowspan usando la herramienta emmet, que nos permite crear tablas de manera rápida, por ejemplo vamos a crear una tabla de 4x4: <br><br>
+        </h4>
+          <code>table&gt;tr*4&gt;td*4</code><br> <br>
+          <table class="tabla3">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table><br><br><br>
+          
+        <h4>
+        Aplicamos <code>&lt;td colspan="2"&gt;</code> dentro de la primera fila en la primera celda. A continuación debemos eliminar la siguiente celda para que no distorsione nuestra tabla:
+        </h4>
+        <table class="tabla3">
+          <tr>
+            <td class="colspan" colspan="2"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table><br><br><br>
+        <h4>
+          
+            Ahora utilizaremos <code>&lt;td rowspan="2"&gt;</code> en la segunda celda de la segunda fila y eliminaremos una celda de la tercera fila para evitar la distorsión: <br><br> 
+          </h4>
+          <table class="tabla3">
+            <tr>
+              <td class="colspan" colspan="2"></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="rowspan" rowspan="2"></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table><br><br><br>
+        
+        <h4>
+          Por último aplicamos de nuevo <code>&lt;td colspan="2"&gt;</code> en la segunda celda de la fila cuatro y eliminamos la tercera celda de esta misma fila. <br><br>
+          Este sería el resultado una vez hemos aplicado rowspan y colspan correctamente:<br><br><br>
+        </h4>
+      <table class="tabla3">
+        <tr>
+          <td colspan="2" class="colspan"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td rowspan="2" class="rowspan"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2" class="colspan"></td>
+          <td></td>
+        </tr>
+    </table>
+    
+    
+    </article>
+    </div>
+      </div>
+        <footer>
+          Para volver al índice <a href="#indice"><img src="../images/indice.png" alt="indice" height="30"></a>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../images/logo5.png" type="image/x-icon">
+</head>
+<body>
+    <div id="etiquetash1"><h1 class="h1" id="tituloetiquetas">Contacto</h1></div>
+
+    <h1 class="Indice" id="indice">Formulario de contacto
+    </h1>
+    
+  <div id="texto2"><div class="texto">
+
+     <h2 class="tituloapartado">Completa los siguientes campos: </h2>
+     
+    <div>
+    <form action="resultado.html" method="post" id="formulario-devs">
+        <fieldset>
+            <h2 class="tituloapartado">Datos personales:</h2>
+            <label for="cuadro-de-nombre">Nombre (obligatorio)</label> <label for="cuadro-de-apellido">Apellido (obligatorio)</label> <br>
+            <input type="text" name="Nombre" size="16" id="cuadro-de-nombre" placeholder="Ej: Pedro" required>
+            
+            <input type="text" name="Apellido" size="16"  id="cuadro-de-apellido" placeholder="Ej: Rodríguez" required>
+            <br>
+            <label for="cuadro-de-email">Email (obligatorio)</label> <br>
+            <input type="email" name="Email" id="cuadro-de-email" placeholder="Ej: pedrorodriguez@email.com" required>
+        </fieldset>
+        <fieldset>
+            <h2 class="tituloapartado">Indica en qué parte de la página te ha parecido más completa:</h2>
+            <input type="radio" name="completa" id="ind" value="Index" checked><label for="ind">Index</label> <br>
+            <input type="radio" name="completa" id="eb" value="Etiquetas"><label for="eb">Etiquetas Básicas</label> <br>
+            <input type="radio" name="completa" id="ft" value="Formatotexto"><label for="ft">Formato de Texto</label> <br>
+            <input type="radio" name="completa" id="en" value="Enlaces"><label for="en">Enlaces</label> <br>
+            <input type="radio" name="completa" id="li" value="Listas"><label for="li">Listas</label><br>
+            <input type="radio" name="completa" id="im" value="Imagenes"><label for="im">Imágenes</label><br>
+            <input type="radio" name="completa" id="tb" value="Tablas"><label for="tb">Tablas</label><br>
+            <input type="radio" name="completa" id="es" value="EtiquetasSemanticas"><label for="es">Etiquetas semánticas</label><br>
+            <input type="radio" name="completa" id="bq" value="Bloques"><label for="bq">Bloques</label>
+            </fieldset>
+            <fieldset>
+                <h2 class="tituloapartado">Selecciona las partes que más te hayan gustado:</h2>
+                <input type="checkbox" name="gustar" id="explicaciones"
+                value="Explic"><label for="explicaciones">Explicaciones</label>
+                <input type="checkbox" name="gustar" id="css" value="Css"><label for="css">Estilos</label>
+                <input type="checkbox" name="gustar" id="img" value="Imagenes"><label for="img">Imágenes</label>
+                <input type="checkbox" name="gustar" id="nav" value="Navegacion"><label for="nav">Navegación</label>
+            </fieldset>
+            <fieldset>
+                <h2 class="tituloapartado">La página que menos te ha gustado es:</h2>
+                <select name="menosgusto" id="menosgusto">
+                    <option value="Seleccion">Selecciona una de las opciones</option>
+                    <option value="Index">Index</option>
+                    <option value="Etiquetas">Etiquetas básicas</option>
+                    <option value="Formato">Formato de texto</option>
+                    <option value="Enlaces">Enlaces</option>
+                    <option value="Listas">Listas</option>
+                    <option value="Imagenes">Imágenes</option>
+                    <option value="Tablas">Tablas</option>
+                    <option value="Semantica">Etiquetas semánticas</option>
+                    <option value="Bloques">Bloques HTML</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <h2 class="tituloapartado">Cuentanos algo más acerca de que te ha parecido nuestra página</h2>
+               <textarea name="texto" rows="5" cols="30" id="exper"></textarea><label for="exper"></label>
+            </fieldset>
+            <fieldset>
+                <input style="color: rgb(3, 36, 65); background-color: rgb(189, 186, 255); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" type="submit" name="Enviar">
+            </fieldset>
+    </form></div>
+   
+    
+     </div></div>
+  <br><br><br>
+  <footer>Para volver arriba <a href="#indice"><img src="../images/indice.png" alt="indice" height="30"></a></footer>
+</body>
+</html>

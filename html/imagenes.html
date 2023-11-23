@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Imágenes HTML</title>
+    <link rel="shortcut icon" href="../images/logo5.png" type="image/x-icon">
+</head>
+<body>
+    <div id="etiquetash1"><h1 class="h1" id="tituloetiquetas">Imágenes</h1></div>
+
+    <h1 class="Indice" id="indice">Índice
+    </h1>
+    <details>
+      <summary><strong> Abrir índice </strong></summary>
+    <div class="indice">
+      <ul class="ind">
+        <li><a href="#atributos">Atributos de una imagen</a></li>
+        <li><a href="#imagenes">Ejemplos de imágenes</a></li>
+      </ul>
+    </div>
+  </details> 
+  <div id="texto2"><div class="texto">
+    Las imágenes son un elemento importante en la construcción de páginas web. En HTML, las imágenes se insertan utilizando el elemento <code>&lt;img&gt;</code>. Este elemento es un elemento vacío, lo que significa que no tiene etiqueta de cierre. En su lugar, utiliza atributos para definir las propiedades de la imagen, como la ubicación de la imagen y su tamaño.
+     <br>
+     <h2 class="tituloapartado">Imágenes en HTML: </h2>
+     <h3 class="tituloapartado" id="atributos">Atributos de una imagen</h3>
+     <p>Para insertar una imagen en una página web, necesitas especificar la ubicación de la imagen utilizando el atributo <code>src</code>. 
+     <br><br>
+     El atributo <code>alt</code> se utiliza para proporcionar una descripción de la imagen. Esto es importante para la accesibilidad, ya que los usuarios que utilizan lectores de pantalla pueden escuchar la descripción de la imagen en lugar de verla.
+     <br> <br>
+     Ejemplo: <code>&lt;img src="nombre_de_la_imagen.jpg" alt="Descripción de la imagen"&gt;</code>
+     <br><br>
+     También puedes especificar el tamaño de la imagen utilizando los atributos <code>width</code> y <code>height</code>
+     <br><br>
+     Ejemplo: <code>&lt;img src="nombre_de_la_imagen.jpg" alt="Descripción de la imagen" width="500" height="300"&gt;</code>
+     <br><br> 
+     Sin embargo, es importante tener en cuenta que especificar el tamaño de la imagen puede afectar la calidad de la imagen. Si la imagen es demasiado grande, puede tardar mucho tiempo en cargarse, lo que puede afectar la experiencia del usuario
+     <br><br>
+     Además se puede poner una imagen de fondo usando <code>background-image</code> en CSS y el resultado será visualmente similar. La elección entre una y otra dependerá del propósito que tengas para la imagen. Si pretendes que la gente imprima la página y deseas que la imagen sea incluida por defecto, utiliza <code>&lt;img&gt;</code>. Si la imagen no es parte del contenido, utiliza <code>background-image</code>. Si es necesario hacer visible solo una parte de la imagen, utiliza <code>background-image</code> combinado con <code>background-size:cover</code> con el fin de estirar una imagen de fondo para cubrir la totalidad del contenedor (ej div, body, etc…).</p>
+    
+        <h3 class="tituloapartado" id="imagenes">Ejemplos Imágenes</h3>
+       
+          <div id="reinalogo">
+        <img src="../images/reinalogo.jpeg" alt="reina con un arma" height="150"> <br>
+        Esta es Reina, la supervillana más mimosa.</div>
+        <br>
+        <main>
+          <div id="comic">
+          <section id="imagenesright">
+            <h5 class="tituloapartado">El día que Reina robó pollito</h5>
+            <br><br>
+            <aside>
+        <img src="../images/pollito.jpeg" alt="reina comiendo pollito" height="100">
+        <img src="../images/pelea.jpeg" alt="reina peleando con supergato" height="100">
+        <br>
+        <img src="../images/felipe.jpeg" alt="felipe siendo secuestrado" height="100">
+        <img src="../images/boda.jpeg" alt="reina casandose con felipe" height="100">
+        <br>
+        <img src="../images/gatollorando.jpeg" alt="Supergato llorando" height="100">
+        <img src="../images/Reinend.jpg" alt="Reina end" height="100">
+      </aside>
+      </section>
+      <br><br><br>
+      <section class="textoimg">
+        <h6>Reina VS Supergato</h6>
+        <aside>
+          
+          A Reina le encanta el pollito del KFC. <br><br>
+          Hoy Reina ha robado su cajita de pollito en el KFC del barrio con la mala suerte que Supergato la ha pillado robando. <br><br>
+          Reina se enfrenta en una pelea contra Supergato y pierde<br><br>
+          Reina como venganza secuestra a Felipe que estaba en casa de Supergato. <br><br>
+          Reina y Felipe se enamoran y se casan. <br><br>
+          Supergato, al enterarse de que Reina y Felipe han unido sus fuerzas, llora desesperado.
+        </aside>
+      </section>
+      <br><br>
+      </div> <br><br><br>
+     </main>
+  </div></div>
+  <br><br><br>
+  <footer>Para volver al indice <a href="#indice"><img src="../images/indice.png" alt="indice" height="30"></a></footer>
+</body>
+</html>

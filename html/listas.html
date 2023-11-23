@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Listas HTML</title>
+    <link rel="shortcut icon" href="../images/logo5.png" type="image/x-icon">
+</head>
+<body>
+    <div id="etiquetash1"><h1 class="h1" id="tituloetiquetas">Listas</h1></div>
+
+    <h1 class="Indice" id="indice">Índice
+    </h1>
+    <details>
+      <summary><strong> Abrir índice </strong></summary>
+    <div class="indice">
+      <ul class="ind">
+        <li><a href="#listasnumeradas">Listas numeradas</a></li>
+        <li><a href="#listasnonumeradas">Listas no numeradas</a></li>
+        <li><a href="#listasanidadas">Listas anidadas</a></li>
+      </ul>
+    </div>
+    </details>
+    <div class="texto" id="texto2">
+        En HTML5, las listas son elementos utilizados para organizar y presentar información de manera estructurada. Los principales tipos de listas son: listas ordenadas <span style="color: rgb(3, 36, 65);"><code>&lt;ol&gt;</code></span> y listas no ordenadas <span style="color: rgb(3, 36, 65);"><code>&lt;ul&gt;</code></span>. Aquí hay un breve resumen de cada tipo
+    
+
+   
+ 
+    
+    <h2 class="tituloapartado"><a href="#indice"><span class="material-symbols-outlined" title="ir a inicio">
+       
+        </span></a>Listas</h2>
+    
+ 
+    <hr>
+    
+    <h3 class="tituloapartado" id="listasnumeradas">Listas numeradas</h3>
+
+    
+    <div class="texto">
+        Para crear listas numeradas en HTML, se utiliza la etiqueta <span style="color: rgb(3, 36, 65);"><code>&lt;ol&gt;</code></span> (ordered list). Aqui hay un breve resumen de cómo crear listas numeradas: <br><br>
+        <article>
+            <h4>
+                Veamos como crear listas numeradas en HTML con mayor profundidad, para ello utilizamos la etiqueta &lt;ol&gt; para iniciar la lista ordenada, y cada elemento se define con la etiqueta &lt;li&gt;. Esto generará una lista numerada con números ascendentes por defecto. Puedes agregar contenido adicional dentro de cada &lt;li&gt; para proporcionar descripciones o información adicional. La estructura general se presenta así:
+                <br><br>
+                
+                <code>&lt;ol&gt;<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit iste.&lt;&#47;li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit acu.&lt;&#47;li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elitm.&lt;&#47;li&gt;<br>
+                
+
+                &lt;&#47;ol&gt;</code><br><br>
+                
+                El resultado del anterior fragmento daría como resultado esto: <br><br>
+            </h4> 
+    <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit iste.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit acu.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elitm.</li>
+    </ol>
+
+</article>
+</div>
+<br><br>
+<hr>
+    <h3 class="tituloapartado" id="listasnonumeradas">Listas no numeradas</h3>
+<div class="texto">
+    Para Para crear listas no numeradas en HTML, se utiliza la etiqueta <span style="color: rgb(3, 36, 65);"><code>&lt;ul&gt;</code></span> (unordered list). Aqui hay un breve resumen de cómo crear listas no numeradas:<br><br>
+    <article>
+        <h4>
+        Crear listas no ordenadas es muy sencillo, el procedimiento es exactamente igual que el que hemos visto para listas ordenadas pero habrá que utilizar las etiquetas &lt;ul&gt;&lt;&#47;ul&gt;. Para agregar contenido adicional dentro de la lista usaremos también la etiqueta &lt;li&gt;. La estructura general se presenta así: <br><br>
+        
+        <code>&lt;ul&gt;</code><br>
+            
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;li&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit iste.&lt;&#47;li&gt;</code><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;li&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit acu.&lt;&#47;li&gt;</code><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elitm.&lt;&#47;li&gt;</code><br>
+                
+        <code>&lt;&#47;ul&gt;</code><br><br>
+        
+                El resultado del anterior fragmento daría como resultado esto: <br><br>
+        </h4>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit iste. </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit acu.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elitm.</li>
+    </ul>
+
+</article>
+</div>
+<br><br>
+<hr>
+    <h3 class="tituloapartado" id="listasanidadas">Listas anidadas</h3>
+    <div class="texto">
+        Por último, podemos crear listas anidadas en HTML que permiten organizar información de manera jerárquica creando sublistas dentro de elementos de la lista principal. <br><br> 
+<article>
+    <h4>
+        Las etiquetas utilizadas son exactamente las mismas que las anteriores y el anidamiento puede realizarse de manera sucesiva para crear niveles adicionales de jerarquía. Veamos la estructura de una lista anidada: <br><br>
+    
+    <br>
+    <code>&lt;ol&gt;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;li&gt;Primera evaluación<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;marcas&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;BBDD&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Segunda evaluación<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;sistemas Informáticos&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;FOL&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Tercera evaluación<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;programación&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;entornos de desarrollo&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+&lt;/ol&gt;</code>
+  <br><br>
+  Este es el resultado de una lista anidada:
+</h4>
+  
+    <ol>
+        <li>Primera evaluación
+            <ul>
+                <li>marcas</li>
+                <li>BBDD</li>
+            </ul>
+        </li>    
+        <li>Segunda evaluación
+            <ul>
+                <li>sistemas informáticos</li>
+                <li>FOL</li>
+            </ul>
+        </li>         
+        <li>Tercera evaluación
+            <ul>
+                <li>programación</li>
+                <li>entornos de desarrollo</li>
+            </ul>
+        </li>    
+        
+    </ol>
+</article>
+</div>
+</div>     
+<footer>
+    Para volver al índice <a href="#indice"><img src="../images/indice.png" alt="indice" height="30"></a>   
+</footer>
+ 
+</body>
+</html>
